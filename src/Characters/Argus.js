@@ -1,4 +1,4 @@
-import CACFormArgus from "../Pages/CAC/CACForm";
+import CACFormArgus from "./ArgusData";
 import FooterList from "../Pages/CAC/footerForm";
 import HeaderList from "../Mock/headerList";
 import { Link } from "react-router-dom";
