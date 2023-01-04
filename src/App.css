@@ -1,38 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
 .App {
+  text-align: center;
+  height: 100%;
+}
+
+.Title {
+  -webkit-text-stroke: 0.1px black;
+  color: red;
+  font-family: 'Cookie', cursive;
+  font-size: 5em;
+  margin-top: 0 ;
+}
+
+.Intro {
+  -webkit-text-stroke: 0.1px darkred;
+  color: red;
+  font-family: 'Cookie', cursive;
+  font-size: 4em;
+}
+
+body {
+  overflow-y:hidden ;
+  overflow-x: hidden;
+  margin: 0;
+}
+.Home {
+  background-size: contain;
+  background-image: url('./DnDwallpaper_2560-x-1600.jpg');
+  height: 100%;
+  width: 100%;
+  
+}
+
+html, body, .App {
+  height: 125vh;
+}
+
+.Charbutton {
+  background-color: darkred;
+  border-color:red ;
+  width: 245px;
+  height: 55px;
+  font-family: 'Cookie', cursive;
+  font-size: 47px;
+  position: relative;
+  top: 173px;
+  left: 110px;
+  text-align: center;
+
+}
+
+.Createbutton {
+  background-color: darkred;
+  border-color:red;
+  width: 245px;
+  height: 55px;
+  font-family: 'Cookie', cursive;
+  font-size: 42px;
+  position: relative;
+  top: 255px;
+  left: -135px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:hover.Charbutton, :hover.Createbutton {
+  color: red;
 }
+/* vw is viewwidth and vh is view height */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.form-Container {
+  position: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+/* .left-Column {
+  margin-top: 90px;
+  float: left;
+  width: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
+} */
+
+.left-Column {
+  margin-top: 90px;
+  float: left;
+  width: 50%;
+  background-color: aqua;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-Column2 {
+  float: left;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
 }
+
+.right-Column {
+  margin-top: 90px;
+  float: left;
+  width: 50%;
+  background-color: red;
+}
+
+.right-Column2 {
+  float: right;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
+}
+
+.Charlore {
+  color: aqua;
+}
+
+.Back {
+  display: flex;
+  float: left;
+}
+
+.Footer {
+  display: flex;
+  float:right;
+  margin-top: 300px;
+  margin-right: 30px;
+}
+
+.row {
+  clear: both;
+}
+
+.Headerform {
+  justify-content: space-between;
+}
+
+.Headerlist {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.CACbutton {
+margin-top: 21px;
+
+}
+
+.Backlist {
+margin-top: 21px;
+}
+
+.CharacterContainer {
+  width: 100%;
+  columns: 2;
+  background-color: aqua;
+}
+
+.Listitem {
+  width: 101.5%;
+  border: solid 2px black;
+  display: inline-block;
+  text-align: center;
+}
+
+/* .CharacterContainer2 {
+  background-color:blue;
+  text-align: left;
+}
+
+.Listitem2 {
+  width: 50%;
+  display: inline-block;
+  background-color: aqua;
+  text-align: center;
+  
+} */
+
+/* inline block is net als block met clear both, maar als je een inline block weer clear both doet dan word het weer een block. */
