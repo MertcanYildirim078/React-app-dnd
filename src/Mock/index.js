@@ -6,6 +6,7 @@ function List() {
         <div>
             <HeaderList />
             <Characterlist />
+            
         </div>
     )
 }

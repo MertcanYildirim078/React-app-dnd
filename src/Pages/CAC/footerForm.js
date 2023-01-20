@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom"
 
 
-function FooterList() {
+function FooterList(props) {
+    function Onsave(character) {
+        character.save()
+    }
     return(
-        <Link to= {'/Charlist'}><button className='Footer'>Save</button></Link>
+        <div>
+        <Link to= {'/Charlist'}><button onClick={() => Onsave(props.character)}className='Footer'>Save</button></Link>
+        {/* <h1>{props.character.get('name')}</h1> */}
+        </div>
     )
 }
 

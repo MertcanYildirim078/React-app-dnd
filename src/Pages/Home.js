@@ -8,7 +8,7 @@ function Home() {
             by clicking the button below. You can also go to your 
             character list if you wish to.</h2>
             <Link to={'/Charlist'}><button className='Charbutton'>Character list</button></Link>
-            <Link to={'/CACP'}><button className='Createbutton'>Create a character</button></Link>
+            <Link to={'/CACP/new'}><button className='Createbutton'>Create a character</button></Link>
             </div>
             
     )

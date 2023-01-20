@@ -21,10 +21,22 @@
 }
 
 body {
-  overflow-y:hidden ;
+  overflow-y: hidden ; 
   overflow-x: hidden;
   margin: 0;
 }
+
+/* 
+@media only screen and (max-width: 600px){
+    body {
+          width: 100%;
+ }};
+
+ @media only screen and (min-width: 600px){
+  body {
+        width: 75%;
+}}; */
+
 .Home {
   background-size: contain;
   background-image: url('./DnDwallpaper_2560-x-1600.jpg');
@@ -124,20 +136,63 @@ html, body, .App {
 .Back {
   display: flex;
   float: left;
+  margin-top: 21px;
 }
 
 .Footer {
   display: flex;
-  float:right;
-  margin-top: 300px;
-  margin-right: 30px;
+  float: right;
+  /* margin-top: 315px; */
 }
+.Footerchar {
+display: flex;
+float: right;
+/* margin-top: 500px; */
+}
+
+@media only screen and (max-width:600px) {
+  .Footerchar {
+      margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width:600px) {
+  .Footerchar {
+      margin-top: 200px;
+  }
+}
+
+@media only screen and (min-width:700px) {
+  .Footerchar {
+      margin-top: 310px;
+  }
+}
+
+/* @media only screen and (max-width:600px) {
+  .Footer {
+      margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width:600px) {
+  .Footer {
+      margin-top: 200px;
+  }
+} */
+
+@media only screen and (min-width:700px) {
+  .Footer {
+      margin-top: 60px;
+  }
+}
+
 
 .row {
   clear: both;
 }
 
 .Headerform {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -147,13 +202,19 @@ html, body, .App {
 
 }
 
+.Charheadersdk {
+  display: flex;
+  justify-content: space-between;
+}
+
 .CACbutton {
 margin-top: 21px;
 
 }
 
-.Backlist {
+.Backlist, .Backchar {
 margin-top: 21px;
+float: left;
 }
 
 .CharacterContainer {
@@ -169,17 +230,29 @@ margin-top: 21px;
   text-align: center;
 }
 
-/* .CharacterContainer2 {
-  background-color:blue;
-  text-align: left;
+.Containerkey {
+  display: inline-flex;
+  flex-direction: column;
+  float: left;
+  width: 50%;
 }
 
-.Listitem2 {
-  width: 50%;
-  display: inline-block;
-  background-color: aqua;
+.Itemkey {
   text-align: center;
-  
-} */
+  width: 100%;
+  border-bottom: 1px black solid ;
+}
 
+.Containervalue {
+  display: inline-flex;
+  flex-direction: column;
+  float: right;
+  width: 50%;
+}
+
+.Itemvalue {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px black solid;
+}
 /* inline block is net als block met clear both, maar als je een inline block weer clear both doet dan word het weer een block. */
