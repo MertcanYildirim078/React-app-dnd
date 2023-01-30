@@ -1,0 +1,25 @@
+.Containerkey {
+    display: inline-flex;
+    flex-direction: column;
+    float: left;
+    width: 50%;
+  }
+  
+  .Itemkey {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px black solid ;
+  }
+  
+  .Containervalue {
+    display: inline-flex;
+    flex-direction: column;
+    float: right;
+    width: 50%;
+  }
+  
+  .Itemvalue {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px black solid;
+  }

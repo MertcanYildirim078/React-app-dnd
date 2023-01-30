@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useEffect, useState } from 'react'
 import Weaver from 'weaver-sdk';
 
-function Characterlist() {
+export default function Characterlist() {
 
     const [characters, setCharacters] = useState([]);
 
@@ -20,20 +20,18 @@ function Characterlist() {
     }
 
     return(
-        <div className="CharacterContainer">
+        <div className="character-list">
             {
-            characters.map((item) => 
-                <Link
-                    key={item.id()}
-                    to={item.id()}
-                    style={style}
-                >
-                    <div className="Listitem">{item.get('Name')}</div>
-                </Link>
-            )
+                characters.map((item) => 
+                    <Link
+                        key={item.id()}
+                        to={item.id()}
+                        style={style}
+                    >
+                        <div>{item.get('Name')}</div>
+                    </Link>
+                )
             }
         </div> 
     )
 }
-
-export default Characterlist

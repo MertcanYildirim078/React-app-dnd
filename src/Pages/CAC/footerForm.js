@@ -7,7 +7,7 @@ function FooterList(props) {
     }
     return(
         <div>
-        <Link to= {'/Charlist'}><button onClick={() => Onsave(props.character)}className='Footer'>Save</button></Link>
+        <Link to= {'/Charlist'}><button onClick={() => Onsave(props.character)} className='Footer'>Save</button></Link>
         {/* <h1>{props.character.get('name')}</h1> */}
         </div>
     )

@@ -1,0 +1,49 @@
+.home {
+    background-size: contain;
+    background-image: url('./DnDwallpaper_2560-x-1600.jpg');
+    height: 100%;
+    width: 100%;    
+}
+
+.intro {
+    -webkit-text-stroke: 0.1px darkred;
+    color: red;
+    font-family: 'Cookie', cursive;
+    font-size: 4em;
+  }
+
+.title {
+    -webkit-text-stroke: 0.1px black;
+    color: red;
+    font-family: 'Cookie', cursive;
+    font-size: 5em;
+    margin-top: 0 ;
+}
+
+.home-nav-buttons {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-nav-buttons > a > button {
+    background-color: darkred;
+    border-color:red;
+    width: 245px;
+    height: 55px;
+    font-family: 'Cookie', cursive;
+    font-size: 42px;
+    text-align: center; 
+}
+
+:hover.home-nav-buttons > a > button {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-nav-buttons > a > button {
+        width: 122.5px;
+        height: 27.5px;
+        font-size: 20px;
+    }
+}

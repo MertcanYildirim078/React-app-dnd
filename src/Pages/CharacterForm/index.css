@@ -1,0 +1,21 @@
+.edit-or-create-form-container {
+    height: 100%;
+}
+
+.edit-or-create-form-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-or-create-form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-or-create-form-header-back-button {
+
+}
+
+.edit-or-create-form-title {
+    
+}

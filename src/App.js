@@ -1,13 +1,12 @@
-import './App.css';
 import React from 'react';
-import Home from './Pages/Home'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Charlist from './Pages/Charlist';
-import CACP from './Pages/CAC';
-import Argus from './Characters/Argus';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react'
+import CharacterList from './Pages/CharacterList';
+import CharacterForm from './Pages/CharacterForm';
+import Character from './Pages/Character';
+import Home from './Pages/Home';
 import Weaver from 'weaver-sdk';
-import Character from './Mock/Character';
+import './App.css';
 
 function App() {
   
@@ -27,12 +26,15 @@ function App() {
   }, [])
 
   return (
-    <div className="App"> <Router><Routes>
-      <Route exact path= '/' element= {<Home/>} />
-      <Route path='Charlist' element= {<Charlist/>} />
-      <Route path='CACP/:id' element= {<CACP/>} />
-      <Route path='Charlist/:id' element= {<Character/>} />
-    </Routes> </Router>  
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route exact path= '/' element= {<Home/>} />
+          <Route path='characters' element= {<CharacterList/>} />
+          <Route path='characters/:id' element= {<Character/>} />
+          <Route path='create-character/:id' element= {<CharacterForm/>} />
+        </Routes>
+      </Router>  
     </div>
   );
 }

@@ -1,11 +1,27 @@
 import { json } from "react-router-dom";
-import Character from "../../Mock/Character";
+import Weaver from "weaver-sdk";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react"
 
 function setproperty (node,key,value) {
-node.set(key, value)
+    node.set(key, value)
 }
 
 function CACForm(props) {
+
+    const { id } = useParams()
+    const [character, setCharacter] = useState(undefined)
+
+    useEffect(() => {
+        (async () => {
+            if (id !== 'new') {
+                const node = await new Weaver.Query().restrict(id).find();
+                setCharacter(node);
+            } else {
+                setCharacter(new Weaver.Node())
+            }
+        })();
+      }, []);
     
     // formItem: {
     //     component: <input/>,

@@ -1,0 +1,22 @@
+.character-list-header {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.character-list-back-button {
+    margin-top: 21px;
+    float: left;
+}
+
+.character-list {
+    width: 100%;
+    columns: 2;
+    background-color: aqua;
+}
+
+.character-list > a > div {
+    width: 101.5%;
+    border: solid 2px black;
+    display: inline-block;
+    text-align: center;
+}
