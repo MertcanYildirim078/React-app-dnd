@@ -28,7 +28,7 @@ export default function Characterlist() {
                         to={item.id()}
                         style={style}
                     >
-                        <div>{item.get('Name')}</div>
+                        <div>{item.get('name')}</div>
                     </Link>
                 )
             }

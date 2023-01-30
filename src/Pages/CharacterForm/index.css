@@ -19,3 +19,35 @@
 .edit-or-create-form-title {
     
 }
+
+.left-column {
+    margin-top: 90px;
+    float: left;
+    width: 50%;
+    background-color: aqua;
+}
+  
+.left-column-items {
+    float: left;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 500px;
+}
+  
+.right-column {
+    margin-top: 90px;
+    float: left;
+    width: 50%;
+    background-color: red;
+}
+  
+.right-column-items {
+    float: right;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 500px;
+}

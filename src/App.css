@@ -20,38 +20,6 @@ html, body, .App {
   flex-direction: column;
 }
 
-.left-Column {
-  margin-top: 90px;
-  float: left;
-  width: 50%;
-  background-color: aqua;
-}
-
-.left-Column2 {
-  float: left;
-  width: 100%;
-  display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 500px;
-}
-
-.right-Column {
-  margin-top: 90px;
-  float: left;
-  width: 50%;
-  background-color: red;
-}
-
-.right-Column2 {
-  float: right;
-  width: 100%;
-  display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 500px;
-}
-
 .Charlore {
   color: aqua;
 }

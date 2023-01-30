@@ -6,8 +6,10 @@ export default function Header({ data }) {
             <Link to={'/characters'}>
                 <button className="character-header-back-button">Back</button>
             </Link>
-            <h1>{data.get('Name')}</h1>
-            <button className="edit-character">Edit</button>
+            <h1>{data.get('name')}</h1>
+            <Link to={`/create-character/${data.id()}`}>
+                <button className="edit-character">Edit</button>
+            </Link>
         </div> 
     )
 }
