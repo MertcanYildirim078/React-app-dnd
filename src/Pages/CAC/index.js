@@ -30,16 +30,12 @@ function CACP() {
       
       if(loading===false) {
         return(
-            <div>
-            <div className='row'>
+            <div className='Formcomp'>
+
             <HeaderForm />
-            </div>
-            <div className='row'>
             <CACForm character={character}/>
-            </div>
-            <div className='row'>
             <FooterList character={character}/>
-            </div>
+            
         </div>
         )
         } else {

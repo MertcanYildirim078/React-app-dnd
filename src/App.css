@@ -56,9 +56,9 @@ html, body, .App {
   height: 55px;
   font-family: 'Cookie', cursive;
   font-size: 47px;
-  position: relative;
+  /* position: relative;
   top: 173px;
-  left: 110px;
+  left: 110px; */
   text-align: center;
 
 }
@@ -70,10 +70,27 @@ html, body, .App {
   height: 55px;
   font-family: 'Cookie', cursive;
   font-size: 42px;
-  position: relative;
+  /* position: relative;
   top: 255px;
-  left: -135px;
+  left: -135px; */
   text-align: center;
+}
+
+.Homebuttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+  .Createbutton, .Charbutton {
+    width: 122.5px;
+    height: 27.5px;
+    font-size: 20px;
+  }
+
+  .Homebuttons {
+    margin-top: 150px;
+  }
 }
 
 :hover.Charbutton, :hover.Createbutton {
@@ -153,18 +170,27 @@ float: right;
 @media only screen and (max-width:600px) {
   .Footerchar {
       margin-top: 100px;
+  };
+
+  .Title{
+    font-size: 2em;
   }
+
+  .Intro {
+    font-size: 1.5em;
+  }
+
 }
 
 @media only screen and (min-width:600px) {
   .Footerchar {
-      margin-top: 200px;
+      margin-top: 120px;
   }
 }
 
 @media only screen and (min-width:700px) {
   .Footerchar {
-      margin-top: 310px;
+      margin-top: 250px;
   }
 }
 
@@ -186,9 +212,8 @@ float: right;
   }
 }
 
-
-.row {
-  clear: both;
+.Formcomp {
+  height: 100%;
 }
 
 .Headerform {
@@ -205,6 +230,11 @@ float: right;
 .Charheadersdk {
   display: flex;
   justify-content: space-between;
+}
+
+.Editchar {
+  height: 21px;
+  margin-top: 21px;
 }
 
 .CACbutton {

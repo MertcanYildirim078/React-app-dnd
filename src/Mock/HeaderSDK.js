@@ -6,7 +6,7 @@ function Headersdk(props) {
         <div className="Charheadersdk">
             <Link to={'/Charlist'}><button className="Backchar">Back</button></Link>
             <h1>{props.character.get('Name')}</h1>
-            <div></div>
+            <button className="Editchar">Edit</button>
         </div> 
     )
 }

@@ -123,13 +123,11 @@ function CACForm(props) {
                 </div>
                 <div className='right-Column'>
                     {
-                        rightColumnFormItems.map(({label, type}) => {
+                        rightColumnFormItems.map(({label, FormItem}) => {
                             return (
                                 <div key={label} className='right-Column2'>
                                 <label>{ label }</label>
-                                {
-                                    formItemRegistry[type]
-                                }
+                                <FormItem/>
                                 </div>
                             );
                         })
