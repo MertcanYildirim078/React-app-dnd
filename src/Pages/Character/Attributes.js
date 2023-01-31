@@ -1,3 +1,5 @@
+import { startCase } from 'lodash'
+
 export default function Character({ data }) {
 
     return(
@@ -6,11 +8,8 @@ export default function Character({ data }) {
             {
                 Object.entries(data.attributes()).map((item, i) => {
                     return (
-                        <div
-                            className='Itemkey'
-                            key={`att-key-${item[0]}-${i}`}
-                        >
-                            { item[0] }
+                        <div key={`att-key-${item[0]}-${i}`}>
+                            { startCase(item[0]) }
                         </div>
                     )
                 })
@@ -20,11 +19,8 @@ export default function Character({ data }) {
             {
                 Object.entries(data.attributes()).map((item, i) => {
                     return (
-                        <div
-                            className='Itemvalue'
-                            key={`att-val-${item[1]}-${i}`}
-                        >
-                            { item[1] }
+                        <div key={`att-val-${item[1]}-${i}`}>
+                            { startCase(item[1]) }
                         </div>
                     )
                 })

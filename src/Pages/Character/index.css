@@ -1,25 +1,25 @@
-.Containerkey {
-    display: inline-flex;
-    flex-direction: column;
-    float: left;
-    width: 50%;
-  }
+.character-attribute-keys {
+  display: inline-flex;
+  flex-direction: column;
+  float: left;
+  width: 50%;
+}
   
-  .Itemkey {
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px black solid ;
-  }
-  
-  .Containervalue {
-    display: inline-flex;
-    flex-direction: column;
-    float: right;
-    width: 50%;
-  }
-  
-  .Itemvalue {
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px black solid;
-  }
+.character-attribute-keys > div {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px black solid ;
+}
+
+.character-attribute-values {
+  display: inline-flex;
+  flex-direction: column;
+  float: right;
+  width: 50%;
+}
+
+.character-attribute-values > div {
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px black solid;
+}

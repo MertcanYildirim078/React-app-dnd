@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom"
 import { leftColumnFormItems, rightColumnFormItems } from "./formItems";
+import { startCase } from 'lodash';
 import './index.css'
 
 export default function CreateEditForm() {
@@ -63,7 +64,7 @@ export default function CreateEditForm() {
                         className='left-column-items'
                         key={name}
                     >
-                        <label>{ name }</label>
+                        <label>{ startCase(name) }</label>
                         <input
                             defaultValue={character.attributes()[name]}
                             type={type}
@@ -83,7 +84,7 @@ export default function CreateEditForm() {
                         className='right-column-items'
                         key={name}
                     >
-                        <label>{ name }</label>
+                        <label>{ startCase(name) }</label>
                         <input
                             defaultValue={character.attributes()[name]}
                             type={type}

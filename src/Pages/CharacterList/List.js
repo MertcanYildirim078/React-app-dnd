@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { useEffect, useState } from 'react'
 import Weaver from 'weaver-sdk';
+import { startCase } from "lodash";
 
 export default function Characterlist() {
 
@@ -28,7 +29,7 @@ export default function Characterlist() {
                         to={item.id()}
                         style={style}
                     >
-                        <div>{item.get('name')}</div>
+                        <div>{ startCase(item.get('name')) }</div>
                     </Link>
                 )
             }
