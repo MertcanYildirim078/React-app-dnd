@@ -6,7 +6,6 @@ import { startCase } from "lodash";
 // lodash is a library providing functions to make tasks easier: https://lodash.com/docs/
 // We are using startCase method from lodash: https://lodash.com/docs/4.17.15#startCase 
 
-
 export default function Characterlist() {
 
     // useState stores 'characters' in component state: https://reactjs.org/docs/hooks-state.html
