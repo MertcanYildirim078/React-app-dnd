@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import './index.css'
 
+// <Link /> allows you to navigate to a page ('to' property should match a 'path' assigned in a <Route/>) 
+// https://reactrouter.com/en/main/components/link
+
 function Home() {
     return(
         <div className='home'>

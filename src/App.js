@@ -10,6 +10,10 @@ import './App.css';
 
 function App() {
   
+  // Connect to Weaver DB
+  // Sign in as user with password
+  // Use `dnd` weaver project
+
   useEffect(() => {
     const makeConnection = async () => {
       if (Weaver.instance === undefined) {
@@ -24,6 +28,9 @@ function App() {
     makeConnection();
     return undefined;
   }, [])
+
+  // Routes for the different pages within the app
+  // https://reactrouter.com/en/main
 
   return (
     <div className="App">

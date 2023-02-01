@@ -6,10 +6,10 @@ export default function Character({ data }) {
         <div>
             <div className='character-attribute-keys'>
             {
-                Object.entries(data.attributes()).map((item, i) => {
+                Object.entries(data.attributes()).map((_attribute, i) => {
                     return (
-                        <div key={`att-key-${item[0]}-${i}`}>
-                            { startCase(item[0]) }
+                        <div key={`att-key-${_attribute[0]}-${i}`}>
+                            { startCase(_attribute[0]) }
                         </div>
                     )
                 })
@@ -17,10 +17,10 @@ export default function Character({ data }) {
             </div>
             <div className='character-attribute-values'>
             {
-                Object.entries(data.attributes()).map((item, i) => {
+                Object.entries(data.attributes()).map((_attribute, i) => {
                     return (
-                        <div key={`att-val-${item[1]}-${i}`}>
-                            { startCase(item[1]) }
+                        <div key={`att-val-${_attribute[1]}-${i}`}>
+                            { startCase(_attribute[1]) }
                         </div>
                     )
                 })
