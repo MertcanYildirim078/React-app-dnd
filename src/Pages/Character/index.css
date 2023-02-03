@@ -1,14 +1,27 @@
+.character-body {
+  background-size: contain;
+  background-image: url('./Listchardnd.jpg');
+  height: 100%;
+  width: 100%;    
+}
+
 .character-attribute-keys {
   display: inline-flex;
   flex-direction: column;
   float: left;
   width: 50%;
+  margin-top: 45px;
 }
   
 .character-attribute-keys > div {
+  min-height: 27.2px;
   text-align: center;
   width: 100%;
-  border-bottom: 1px black solid ;
+  font-family: 'Cookie', cursive;
+  font-size: 1.5em;
+  border-bottom: 2px black solid;
+  color: darkred;
+  -webkit-text-stroke: 1px red;
 }
 
 .character-attribute-values {
@@ -19,7 +32,69 @@
 }
 
 .character-attribute-values > div {
+  min-height: 27.2px;
   text-align: center;
   width: 100%;
-  border-bottom: 1px black solid;
+  font-family: 'Cookie', cursive;
+  font-size: 1.5em;
+  border-bottom: 2px black solid;
+  color: darkred;
+  -webkit-text-stroke: 1px red;
+}
+
+.character-name-title {
+  font-family: 'Cookie', cursive;
+  color: red;  
+  -webkit-text-stroke: 0.1px darkred;
+  font-size: 3.5em;
+}
+
+
+.edit-character { 
+  display: flex;
+  float: right;
+  margin-top: 21px;
+  margin-bottom: 5px;
+  background-color: darkred;
+  border-color:red;
+  font-family: 'Cookie', cursive;
+  width: 90px;
+  height: 45px;
+  text-align: center;
+  padding-left: 17px;
+  padding-top: 2px;
+  font-size: 38px;
+}
+
+.character-header-back-button {
+  display: flex;
+  float: left;
+  margin-top: 21px;
+  background-color: darkred;
+  border-color:red;
+  font-family: 'Cookie', cursive;
+  width: 90px;
+  height: 45px;
+  text-align: center;
+  padding-left: 17px;
+  padding-top: 2px;
+  font-size: 38px;
+}
+
+.character-header-delete-button {
+  display: flex;
+  float: right;
+  background-color: darkred;
+  border-color:red;
+  font-family: 'Cookie', cursive;
+  width: 90px;
+  height: 45px;
+  text-align: center;
+  padding-left: 11px;
+  padding-top: 2px;
+  font-size: 38px;
+}
+
+a {
+  margin-bottom: 0px;
 }

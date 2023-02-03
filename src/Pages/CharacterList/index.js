@@ -4,7 +4,7 @@ import './index.css'
 
 export default function CharacterList() {
     return (
-        <div>
+        <div className='characterlist-body'>
             <Header/>
             <List/>
         </div>

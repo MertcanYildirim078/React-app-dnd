@@ -43,10 +43,14 @@ export default function CreateEditForm() {
 
     const Header = () =>
         <div className="edit-or-create-form-header">
+            
             <Link to= {'/characters'}>
                 <button className="edit-or-create-form-header-back-button">Back</button>
             </Link> 
+
             <h1 className="edit-or-create-form-title">{ actionText } a Character</h1>
+
+            <div></div>
         </div>
 
     const Footer = () => 
@@ -57,45 +61,49 @@ export default function CreateEditForm() {
         />
 
     const LeftColumn = () =>
-        <div className='left-column'>
-            {
-                leftColumnFormItems.map(({ name, type}) => 
-                    <div
-                        className='left-column-items'
-                        key={name}
-                    >
-                        <label>{ startCase(name) }</label>
-                        <input
-                            defaultValue={character.attributes()[name]}
-                            type={type}
-                            name={name}
-                            {...register(name)}
-                        />
-                    </div>
-                )
-            }
+        <div className="left-column-container">
+            <div className='left-column'>
+                {
+                    leftColumnFormItems.map(({ name, type}) => 
+                        <div
+                            className='left-column-items'
+                            key={name}
+                        >
+                            <label>{ startCase(name) }</label>
+                            <input
+                                className="edit-or-create-left-column-input"
+                                defaultValue={character.attributes()[name] || ' '}
+                                type={type}
+                                name={name}
+                                {...register(name)}
+                            />
+                        </div>
+                    )
+                }
+            </div>
         </div>
-
     const RightColumn = () =>
-        <div className='right-column'>
-            {
-                rightColumnFormItems.map(({ name, type}) => 
-                    <div
-                        className='right-column-items'
-                        key={name}
-                    >
-                        <label>{ startCase(name) }</label>
-                        <input
-                            defaultValue={character.attributes()[name]}
-                            type={type}
-                            name={name}
-                            {...register(name)}
-                        />
-                    </div>
-                )
-            }
+        <div className="right-column-container">
+            <div className='right-column'>
+                {
+                    rightColumnFormItems.map(({ name, type}) => 
+                        <div
+                            className='right-column-items'
+                            key={name}
+                        >
+                            <label>{ startCase(name) }</label>
+                            <input
+                                className="edit-or-create-right-column-input"
+                                defaultValue={character.attributes()[name] || ' '}
+                                type={type}
+                                name={name}
+                                {...register(name)}
+                            />
+                        </div>
+                    )
+                }
+            </div>
         </div>
-
     if (!isLoading) {
         return (
             <div className='edit-or-create-form-container'>

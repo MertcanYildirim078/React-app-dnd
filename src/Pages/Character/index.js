@@ -17,11 +17,11 @@ export default function Character() {
           }
         getAndSetData();
         return undefined;
-      })
+    }, [])
 
     if (character !== undefined) {
         return(
-            <div>
+            <div className='character-body'>
                 <Header data={character}/>
                 <Attributes data={character}/>
             </div> 

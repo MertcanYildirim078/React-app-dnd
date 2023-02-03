@@ -1,7 +1,7 @@
 import { startCase } from 'lodash'
 
 export default function Character({ data }) {
-
+console.log(data.attributes())
     return(
         <div>
             <div className='character-attribute-keys'>

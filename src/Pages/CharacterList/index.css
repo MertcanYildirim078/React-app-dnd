@@ -1,22 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+.characterlist-body {
+    background-size: contain;
+    background-image: url('./Listchardnd.jpg');
+    height: 100%;
+    width: 100%;    
+}
+
 .character-list-header {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
+    font-family: 'Cookie', cursive;
+    color: red;  
+    -webkit-text-stroke: 0.1px darkred;
+    font-size: 2em;
+}
+
+.character-list-back-button, .create-character-button {
+    margin-top: 21px;
+    background-color: darkred;
+    border-color:red;
+    width: 90px;
+    height: 45px;
+    font-family: 'Cookie', cursive;
 }
 
 .character-list-back-button {
-    margin-top: 21px;
-    float: left;
+   font-size: 38px;
+}
+
+.create-character-button {
+    font-size: 26px;
+    width: 130px;
+    height: 60px;
+}
+
+:hover.character-list-back-button, :hover.create-character-button {
+    color: red;
 }
 
 .character-list {
     width: 100%;
     columns: 2;
-    background-color: aqua;
 }
 
 .character-list > a > div {
     width: 101.5%;
-    border: solid 2px black;
+    border: solid 1px black;
     display: inline-block;
     text-align: center;
+    padding-top: 7px;
+    background-color: rgb(133, 25, 25);
+    color: black;
+    border-radius: 6px;
+    height: 1.3em;
+    font-family: 'Cookie', cursive;
+    font-size: 26px;
+    
 }
+
+.character-list-name {
+    margin-top: 5px;
+}
+
+:hover.character-list-name {
+    color: red;
+    border: red solid 1px
+}
+
+/* .character-list-title {
+    -webkit-text-stroke: 0.1px darkred;
+} */

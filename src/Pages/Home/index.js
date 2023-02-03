@@ -17,10 +17,10 @@ function Home() {
             </h2>
             <div className='home-nav-buttons'>
                 <Link to={'/characters'}>
-                    <button>Character list</button>
+                    <button className='home-nav-charlist'>Character list</button>
                 </Link>
                 <Link to={'/create-character/new'}>
-                    <button>Create a character</button>
+                    <button className='home-nav-createchar'>Create a character</button>
                 </Link>
             </div>
         </div>      

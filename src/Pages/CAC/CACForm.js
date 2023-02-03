@@ -37,84 +37,78 @@ function CACForm(props) {
        
         {
             label: 'Name',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Name',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'name',value.target.value)}/>
                 },
         {
             label: 'Surname',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Surname',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'surname',value.target.value)}/>
                 },
         {
             label: 'Class',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Class',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'class',value.target.value)}/>
                 },
         {
             label: 'Gender',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Gender',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'gender',value.target.value)}/>
             },
         {
             label: 'Race',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Race',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'race',value.target.value)}/>
             },
         {
             label: 'Hair color',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Hair color',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'hair color',value.target.value)}/>
             },
         {
             label: 'Skin color',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Skin color',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'skin color',value.target.value)}/>
             },
         {
             label: 'Eye color',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Eye color',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'eye color',value.target.value)}/>
             },
         {
             label: 'Age',
-            FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Age',value.target.value)}/>
+            FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'age',value.target.value)}/>
             },
         {
             label: 'Weight (KG)',
-            FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Weight (KG)',value.target.value)}/>
+            FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'weight (KG)',value.target.value)}/>
             },
         {
             label: 'Length (CM)',
-            FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Length (CM)',value.target.value)}/>
+            FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'length (CM)',value.target.value)}/>
             },
         {
             label: 'Birth place',
-            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'Birth place',value.target.value)}/>
+            FormItem: () => <input type='text' onChange={(value) => setproperty(props.character,'birth place',value.target.value)}/>
             },
 
     ];
-
-    const formItemRegistry = {
-        string: <input type="text"/>,
-        number: <input type="number"/>,
-        multiLine: <textarea rows='11'/>
-      }
       
     const rightColumnFormItems = [
         
            {
                 label: 'Strength',
-                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Strength',value.target.value)}/>},
+                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'strength',value.target.value)}/>},
             {
                 label: 'Dexterity',
-                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Dexterity',value.target.value)}/>},
+                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'dexterity',value.target.value)}/>},
             {
                 label: 'Constition',
-                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Constition',value.target.value)}/>},
+                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'constition',value.target.value)}/>},
             {
                 label: 'Intelligence',
-                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Intelligence',value.target.value)}/>},
+                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'intelligence',value.target.value)}/>},
             {
                 label: 'Wisdom',
-                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Wisdom',value.target.value)}/>},
+                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'wisdom',value.target.value)}/>},
             {
                 label: 'Charisma',
-                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'Charisma',value.target.value)}/>},
+                FormItem: () => <input type='number' onChange={(value) => setproperty(props.character,'charisma',value.target.value)}/>},
             {
                 label: 'Character Lore',
-                FormItem: () => <textarea rows={11} onChange={(value) => setproperty(props.character,'Character Lore',value.target.value)}/>,
+                FormItem: () => <textarea rows={11} onChange={(value) => setproperty(props.character,'character lore',value.target.value)}/>,
                 className:'Charlore'
                                  },
             ];

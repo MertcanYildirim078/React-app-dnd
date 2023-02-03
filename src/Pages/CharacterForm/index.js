@@ -3,7 +3,7 @@ import EditOrCreate from './EditOrCreate';
 export default function CharacterForm() {
 
     return (
-        <div>
+        <div className='edit-or-create-body'>
             <EditOrCreate />
         </div>
     )

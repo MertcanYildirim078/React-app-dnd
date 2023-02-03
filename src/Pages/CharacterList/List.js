@@ -35,7 +35,7 @@ export default function Characterlist() {
                         key={_character.id()}
                         to={_character.id()}
                     >
-                        <div>{ startCase(_character.get('name')) }</div>
+                        <div className="character-list-name">{ startCase(_character.get('name')) }</div>
                     </Link>
                 )
             }

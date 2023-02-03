@@ -9,63 +9,26 @@ body {
   overflow-y: hidden ; 
   overflow-x: hidden;
   margin: 0;
+  background-size: contain;
+  background-image: url('./Listchardnd.jpg');
+  height: 100%;
+  width: 100%;    
+}
+
+@media only screen and (max-width:(600px)) {
+  body {
+    overflow-y: scroll;
+  }
 }
 
 html, body, .App {
   height: 125vh;
 }
 
-.form-Container {
-  position: flex;
-  flex-direction: column;
-}
-
-.Charlore {
-  color: aqua;
-}
-
-.Back {
-  display: flex;
-  float: left;
-  margin-top: 21px;
-}
-
-.Footer {
-  display: flex;
-  float: right;
-  /* margin-top: 315px; */
-}
 .Footerchar {
 display: flex;
 float: right;
 /* margin-top: 500px; */
-}
-
-@media only screen and (max-width:600px) {
-  .Footerchar {
-      margin-top: 100px;
-  };
-
-  .Title{
-    font-size: 2em;
-  }
-
-  .Intro {
-    font-size: 1.5em;
-  }
-
-}
-
-@media only screen and (min-width:600px) {
-  .Footerchar {
-      margin-top: 120px;
-  }
-}
-
-@media only screen and (min-width:700px) {
-  .Footerchar {
-      margin-top: 250px;
-  }
 }
 
 /* @media only screen and (max-width:600px) {
